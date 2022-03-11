@@ -7,7 +7,7 @@ import Picker from '../Picker/Picker.js';
 
 export default function Home() {
   const [head, setHead] = useState('');
-
+  const [middle, setMiddle] = useState('');
   return (
     <main>
       <div className="left">
@@ -15,6 +15,8 @@ export default function Home() {
           {...{
             head,
             setHead,
+            middle,
+            setMiddle,
           }}
         />
       </div>
@@ -24,6 +26,7 @@ export default function Home() {
           <Character
             {...{
               head,
+              middle,
             }}
           />
         </div>
