@@ -2,18 +2,30 @@ import React, { useState } from 'react';
 
 import './Home.css';
 
-import Head from '../Head/Head.js';
+import Character from '../Character/Character.js';
 import Picker from '../Picker/Picker.js';
 
 export default function Home(props) {
+  const [head, setHead] = useState('');
+
   return (
     <main>
       <div className="left">
-        <Picker />
+        <Picker
+          {...{
+            head,
+            setHead,
+          }}
+        />
       </div>
+
       <div className="right">
         <div className="character">
-          <Head />
+          <Character
+            {...{
+              head,
+            }}
+          />
         </div>
       </div>
     </main>

@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function Picker() {
+export default function Picker({ head, setHead }) {
   return (
     <div className="picker">
       <label>
         Head
-        <select id="head-dropdown">
+        <select id="head-dropdown" value={head} onChange={(e) => setHead(e.target.value)}>
           <option value="bird">Bird</option>
           <option value="duck">Duck</option>
           <option value="dog">Dog</option>
