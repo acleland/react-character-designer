@@ -1,6 +1,16 @@
 import React from 'react';
 
-export default function Picker({ head, setHead, middle, setMiddle, bottom, setBottom }) {
+export default function Picker({
+  head,
+  setHead,
+  middle,
+  setMiddle,
+  bottom,
+  setBottom,
+  phrase,
+  setPhrase,
+  savePhrase,
+}) {
   return (
     <div className="picker">
       <label>
@@ -32,8 +42,10 @@ export default function Picker({ head, setHead, middle, setMiddle, bottom, setBo
       </label>
       <label>
         Add a catch phrase
-        <input id="catchphrase-input" />
-        <button id="catchphrase-button">Add</button>
+        <input id="catchphrase-input" value={phrase} onChange={(e) => setPhrase(e.target.value)} />
+        <button id="catchphrase-button" onClick={() => savePhrase(phrase)}>
+          Add
+        </button>
       </label>
     </div>
   );
