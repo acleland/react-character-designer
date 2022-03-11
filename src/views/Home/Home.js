@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 import './Home.css';
 
-import Character from '../Character/Character.js';
-import Picker from '../Picker/Picker.js';
-import Phrases from '../Phrases/Phrases.js';
+import Character from '../../components/Character/Character.js';
+import Picker from '../../components/Picker/Picker.js';
+import Phrases from '../../components/Phrases/Phrases.js';
 
 export default function Home() {
   const [head, setHead] = useState('');
