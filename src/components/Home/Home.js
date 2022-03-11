@@ -5,7 +5,7 @@ import './Home.css';
 import Character from '../Character/Character.js';
 import Picker from '../Picker/Picker.js';
 
-export default function Home(props) {
+export default function Home() {
   const [head, setHead] = useState('');
 
   return (
