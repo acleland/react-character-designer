@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Picker({ head, setHead, middle, setMiddle }) {
+export default function Picker({ head, setHead, middle, setMiddle, bottom, setBottom }) {
   return (
     <div className="picker">
       <label>
@@ -24,7 +24,7 @@ export default function Picker({ head, setHead, middle, setMiddle }) {
       </label>
       <label>
         Bottom
-        <select id="bottom-dropdown">
+        <select id="bottom-dropdown" value={bottom} onChange={(e) => setBottom(e.target.value)}>
           <option value="leg">Single Leg</option>
           <option value="white">White Pants</option>
           <option value="blue">Blue Jeans</option>

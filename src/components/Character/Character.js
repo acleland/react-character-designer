@@ -13,7 +13,11 @@ export default function Character({ head, middle, bottom }) {
         id="middle"
         style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/${middle}-middle.png)` }}
       ></div>
-      <div className="bg bottom" id="bottom"></div>
+      <div
+        className="bg bottom"
+        id="bottom"
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/${bottom}-pants.png)` }}
+      ></div>
     </div>
   );
 }
