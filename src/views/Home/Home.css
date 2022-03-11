@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  flex-direction: rows;
+}
+
+.picker {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .left {
+  overflow: scroll;
+} */
+
+.left,
+.right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.character {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr 2fr;
+  height: 700px;
+  width: 200px;
+}
+
+.catchphrase {
+  font-size: 2rem;
+  font-family: cursive;
+  text-align: center;
+}
+
+.bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
